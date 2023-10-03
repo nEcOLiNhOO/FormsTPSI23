@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+    .azul{background-color: blue; color: white}
+    .verde{background-color: green; color: white}
+    .tijolo{background-color: tomato; color: white}
+    </style>
+    <title</title>
+</head>
+<body>
+    <h2> Responsividade de elementos</h2>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 azul">Coluna 1</div>
+            <div class="col-lg-4 col-md-6 col-sm-12 verde">Coluna 2</div>
+            <div class="col-lg-4 col-md-6 col-sm-12 tijolo">Coluna 3</div>
+        </div>
+    </div>
+    <h2> Menu Responsivo</h2>
+    <div class="container" id="menu"></div>
+    <nav>
+        <ul class="row">
+            <li class="col-lg-2 col-md-4 col-sm-12">Home</li>
+            <li class="col-lg-2 col-md-4 col-sm-12">Empresa</li>
+            <li class="col-lg-2 col-md-4 col-sm-12">Sobre Nós</li>
+            <li class="col-lg-2 col-md-4 col-sm-12">Produtos</li>
+            <li class="col-lg-2 col-md-4 col-sm-12">Contatos</li>
+            <li class="col-lg-2 col-md-4 col-sm-12">Login</li>
+        </ul>
+    </nav>
+    <h2>Formulario de Registo</h2>
+    <div id="form_registo" class="container">
+        <form id="form_registar" method="post" action="php/validaDadosRegisto.php">
+            <!-- Nome -->
+            <div class="row">
+                <div class="col-md-6 col-sm-12"><label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome"
+                    placeholder="Insira o seu nome">
+                </div>                
+                <div class="col-md-6 col-sm-12"><label for="apelido" class="form-label">Apelido</label>
+                    <input type="text" class="form-control" id="apelido" name="apelido"
+                    placeholder="Insira o apelido">
+                </div>
+            </div>
+            <!-- Morada -->
+            <div class="row">
+                <div class="col"><label for="morada1" class="form-label">Morada 1</label>
+                    <input type="text" class="form-control" id="morada" name="morada"
+                    placeholder="Rua da escola nº27">
+                </div>                
+                <div class="col"><label for="morada2" class="form-label">Morada 2</label>
+                    <input type="text" class="form-control" id="morada2" name="morada12"
+                    placeholder="Apartado 202, Mem Martins, Sintra">
+                </div>
+            </div>
+            <!-- localidade -->
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <label for="localidade" class="form-label">Localidade</label>
+                    <input type="text" class="form-control" id="localidade" name="localidade"
+                    placeholder="Insira a sua localidade">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="distrito" class="form-label">Distrito</label>
+                    <input type="text" class="form-control" id="distrito" name="distrito"
+                    placeholder="Insira o seu distrito">                    
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label for="cod_postal" class="form-label">Codigo Postal</label>
+                    <input type="text" class="form-control" id="cod_postal" name="cod_postal"
+                    placeholder="4569-321">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email"
+                    placeholder="Insira um email valido">                        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <label for="pass" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="pass" name="pass"
+                    placeholder="Insira uma password">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <label for="repass" class="form-label">Reescreva Password</label>
+                    <input type="password" class="form-control" id="repass" name="repass"
+                    placeholder="Reescreva a password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="" style="display: flex; justify-content: center;">
+                <button class="btn btn-success" type="submit" style="margin: 10px;">Registar</button>
+                    <button class="btn btn-danger" type="reset" style="margin: 10px;">Limpar Formulario</button>
+                    </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
